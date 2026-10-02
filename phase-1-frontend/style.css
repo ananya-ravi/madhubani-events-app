@@ -6,8 +6,16 @@ h1 {
     font-size: 36px;
 }
 
+.events-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .event-card {
     width: 400px;
+    max-width: 100%;
+
     padding: 20px;
     margin-top: 30px;
     box-sizing: border-box;
@@ -20,7 +28,7 @@ h1 {
     line-height: 1.5;
 }
 
-#view-details-button {
+.view-details-button {
     background-color: #7a3e2b;
     color: white;
     padding: 10px 16px;
@@ -29,6 +37,7 @@ h1 {
     cursor: pointer;
 }
 
-#view-details-button:hover {
+.view-details-button:hover {
     background-color: #5c2e20;
 }
+
