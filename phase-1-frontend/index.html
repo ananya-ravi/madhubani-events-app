@@ -1,35 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Madhubani Events</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Madhubani Events | Discover Traditional Art</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Madhubani Events</h1>
 
-    <a href="create-event.html" class="create-event-link">+ Create Event</a>
-    
-    <h2>Upcoming Events</h2>
-    <div class="events-container">
-        <div class="event-card">
-            <h3>Beginner Madhubani Painting Workshop</h3>
-            <p>Oct 10, 2026</p>
-            <p>Seattle, Washington</p>
-            <p>Workshop</p>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="site-logo">
+                Madhubani<span>Events</span>
+            </a>
 
-            <a class="view-details-button" href="event-details.html">View Details</a>
+            <nav class="site-nav">
+                <a href="#events">Explore Events</a>
+                <a href="create-event.html" class="nav-button">
+                    + Create Event
+                </a>
+            </nav>
         </div>
-        <div class="event-card">
-            <h3>Madhubani Art Exhibition</h3>
-            <p>November 5, 2026</p>
-            <p>Bellevue, Washington</p>
-            <p>Exhibition</p>
+    </header>
 
-            <a class="view-details-button" href="exhibition-details.html">View Details</a>
-        </div>
-    </div>
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+
+                <div class="hero-text">
+                    <p class="eyebrow">ART · CULTURE · COMMUNITY</p>
+
+                    <h1>
+                        Discover the beauty of
+                        <span>Madhubani Art</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Explore inspiring workshops, exhibitions,
+                        and creative experiences that celebrate
+                        the rich tradition of Madhubani painting.
+                    </p>
+
+                    <a href="#events" class="primary-button">
+                        Explore Events
+                    </a>
+                </div>
+
+                <div class="hero-artwork">
+                    <img src="images/Madhubani_Mahavidyas.jpg"
+                        alt="Traditional Madhubani painting with detailed figures and circular motifs">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="events" class="events-section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">EXPLORE & EXPERIENCE</p>
+                    <h2>Discover Art Events</h2>
+                    <p>
+                        Find creative experiences that bring
+                        traditional art and community together.
+                    </p>
+                </div>
+            </div>
+
+            <p class="demo-notice">
+                Sample event listings for the prototype.
+            </p>
+
+            <div class="events-container" id="events-list"></div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            Madhubani Events · A student-created art community project
+        </p>
+        <p>Celebrating creativity, culture, and tradition.</p>
+    </footer>
+    <script src="events.js"></script>
+    <script src="app.js"></script>
+
 </body>
 
 </html>
